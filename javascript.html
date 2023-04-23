@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Obracunavanje zapremine valjka</title>
+</head>
+<body>
+
+<form>
+<label>Unesi visinu</label> 
+<br>   
+<input id="Visina">
+<br><br>
+<label>Unesi poluprecnik</label>
+<br>
+<input id="poluprecnik">
+<br><br>
+<input type="button" onclick="izracunaj()" value="Izracunaj">
+</form>
+
+<script>
+const pi = 3.14;
+function izracunaj() {
+    const H = document.getElementById("Visina").value;
+    const r = document.getElementById("poluprecnik").value; 
+    const rr = parseInt(r);
+    const V = (rr * rr) * pi * H;
+
+    alert("Rezultat je: " + V)
+    //console.log(r.value);
+    console.log(V);
+}
+    
+    </script>
+</body>
+
+</body>
+</html>
